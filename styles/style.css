@@ -1,0 +1,6 @@
+@import url(./reset.css);
+@import url(./formStyle.css);
+@import url(./tableStyle.css);
+.content-container {
+    display: flex;
+}
