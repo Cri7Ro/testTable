@@ -1,0 +1,84 @@
+.hideColumnMenu {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 20px 1rem 20px;
+    position: fixed;
+    right: 35vw;
+}
+
+table {
+    font-family: 'Titillium Web', sans-serif;
+    max-width: 50vw;
+    margin-left: 5px;
+}
+
+td {
+    border: 2px solid white;
+    vertical-align: middle;
+    cursor: cell;
+    height: 2.5rem;
+    background: linear-gradient(180deg, rgba(252, 251, 230, 1) 41%, rgba(230, 229, 202, 1) 93%);
+    padding: 0 15px;
+}
+
+tr:not(.table-heading):hover {
+    background-color: red;
+}
+
+caption {
+    margin: 1rem 0 15px;
+}
+
+.cell-heading {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(44, 174, 232, 1) 0%, rgba(252, 251, 230, 1) 93%);
+    border: 2px solid white;
+    min-width: 150px;
+    padding: 10px 15px;
+}
+
+.cell-heading button,
+.navigation button {
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.eyeColor {
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 180%;
+    margin: 0 auto;
+}
+
+.cellEyeColor {
+    width: 7vw;
+    padding: 10px 0;
+    margin: auto;
+}
+
+.colorText {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 5px;
+    gap: 15px;
+    font-size: 20px;
+}
+
+.navigation button {
+    font-size: 20px;
+}
+
+.about {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    box-sizing: border-box;
+    overflow: hidden;
+}

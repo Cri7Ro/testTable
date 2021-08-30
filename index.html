@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="page">
+        <main>
+            <section class="content-container">
+                <table>
+                    <caption>Информация</caption>
+                    <tr class="table-heading">
+                        <th>
+                            <div data-column-name="name" class="cell-heading">
+                                Имя
+                                <div>
+                                    <button data-order="descending" class="sort">▼</button><button data-order="ascending" class="sort">▲</button>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div data-column-name="surname" class="cell-heading">
+                                Фамилия
+                                <div>
+                                    <button data-order="descending" class="sort">▼</button><button data-order="ascending" class="sort">▲</button>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div data-column-name="about" class="cell-heading">
+                                Описание
+                                <div>
+                                    <button data-order="descending" class="sort">▼</button><button data-order="ascending" class="sort">▲</button>
+                                </div>
+                            </div>
+                        </th>
+                        <th>
+                            <div data-column-name="eyeColor" class="cell-heading">
+                                Цвет глаз
+                                <div>
+                                    <button data-order="descending" class="sort">▼</button><button data-order="ascending" class="sort">▲</button>
+                                </div>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+                <div class="hideColumnMenu">
+                    <h3>Показать/скрыть столбцы</h3>
+                    <label for="nameCol">
+                        <input type="checkbox" name="nameCol" checked>
+                        Имя
+                    </label>
+                    <label for="surnameCol">
+                        <input type="checkbox" name="surnameCol" checked>
+                        Фамилия
+                    </label>
+                    <label for="aboutCol">
+                        <input type="checkbox" name="aboutCol" checked>
+                        Информация
+                    </label>
+                    <label for="eyeColorCol">
+                        <input type="checkbox" name="eyeColorCol" checked>
+                        Цвет глаз
+                    </label>
+                </div>
+                <div>
+                    <form>
+                        <p class="form-heading">Персональные данные</p>
+                        <label for="name">Имя</label>
+                        <input type="text" placeholder="Имя" id="name" name="name">
+                        <label for="surname">Фамилия</label>
+                        <input type="text" placeholder="Фамилия" id="surname" name="surname">
+                        <label for="about">Информация</label>
+                        <textarea placeholder="Информация" id="about" name="about" rows="10"></textarea>
+                        <label for="eyeColor">Цвет глаз</label>
+                        <input type="text" placeholder="Цвет глаз" id="eyeColor" name="eyeColor">
+                        <button type="submit">Изменить</button>
+                    </form>
+                </div>
+            </section>
+            <div class="navigation">
+                <button class="prev" disabled>❮</button>
+                <p class="current-page"><i class="current-page-num"></i></p>
+                <button class="next">❯</button>
+            </div>
+        </main>
+    </div>
+    <script src='/scripts/createTable/index.js' type="module"></script>
+    <script src='/scripts/sortTableRow.js' type="module"></script>
+    <script src='/scripts/hideColumn.js' type="module"></script>
+</body>
+
+</html>
